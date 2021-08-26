@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox nested flex</title>
+    <!-- aik flex item ko display flex kr k usko bhi flex banana yeh bhi grid ki trh hi hoga  -->
+    <style>
+        .container{
+            border: 2px solid black;
+            
+            margin: 50px auto;
+            height: 250px;
+            color: wheat;
+            vertical-align: middle;
+
+            
+
+            display: flex;
+            flex-direction: column;
+            
+
+
+        }
+        .items{
+            flex-grow: 1;
+        }
+        .item1{
+            background-color: rgb(6, 87, 87);
+        }
+        .item2{background-color: brown;
+            display: flex;
+
+        }
+
+
+        .item3{
+            background-color: tomato;
+           
+        }
+        .item4{
+            background-color:teal;
+        }
+
+        .subitem1{
+            background-color: red;
+        }
+        .subitem2{
+            background-color: lightsalmon;
+        }
+        .subitem3{
+            background-color: crimson;
+        }
+        .subitems{
+            flex-grow: 1;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox nested flex</h1>
+    
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two
+
+            <div class="subitems subitem1">A</div>
+            <div class="subitems subitem2">B</div>
+            <div class="subitems subitem3">C</div>
+        </div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+    </div>
+
+</body>
+</html>

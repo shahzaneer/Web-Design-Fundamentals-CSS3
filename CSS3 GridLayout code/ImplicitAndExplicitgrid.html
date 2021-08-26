@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implicit and explicit grid</title>
+
+     <style>
+        main{
+            padding: 0; margin: 0;
+            text-align: center;
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            grid-template-rows: repeat(2,150px );
+
+           
+            grid-gap: 10px;
+
+            /* 2 column hain 2 rows hain yeh hamaray normal jo hmne liay hain inhe kehtay hain explicit grid aur jinko speciy nhi kia usnhe kehtay hain implicit grid */
+
+            /* implicit grid ki styling k liay hamaray pas yeh teen  */
+
+            grid-auto-rows: 80px;
+            /* ab implicit grid ki rows ki stylin yun krdi hmne  */
+            grid-auto-flow: column ;
+
+            /*grid auto flow me hum column dengay tou new divs column me jayengay werna row me  */
+
+            grid-auto-columns: 0.5fr;
+
+
+
+            
+        }
+        .items1{background-color: orange;}
+        .items2{background-color: blue;}
+        .items3{background-color: aqua;}
+        .items4{background-color: rgb(14, 212, 47);}
+        .items5{background-color: chartreuse;}
+        .items6{background-color: darkcyan;}
+        .items7{background-color: crimson;}
+        .items8{background-color: violet;}
+    </style>
+    
+</head>
+<body>
+    <h1>Implicit and explicit grid</h1>
+    <main>
+        <div class="items items1">one </div>
+        <div class="items items2">two</div>
+        <div class="items items3">three </div>
+        <div class="items items4">four</div>
+        <div class="items items5">five</div>
+        <div class="items items6">six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+    </main>
+
+</body>
+</html>

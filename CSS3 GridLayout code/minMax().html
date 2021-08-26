@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid minMax()</title>
+    <style>
+        main{
+            padding: 0; margin: 0;
+            text-align: center;
+            color: white;
+            display: grid;
+            grid-template-columns: max-content 1fr 1fr min-content;
+            /* max-content ka mtlb hai k width utni krdo jitna isme maximum content hai isme line break hona khtm hojati hai   */
+
+            /* min-content me jitn CONTENT HOGA utni krdi jayegi lekin isme line break hogi */
+            /* grid-template-rows: repeat(2,min-content); */
+
+            grid-template-rows: repeat(2,minmax(150px ,min-content) );
+
+            /* minMax function --> do arg hain pehla hai k minimum height kitni dhikhani  hai dusra hai k maximum kitni dhikhani hai 
+            maximun height se zyada jo content ayego wo overflow hojayega */
+
+        }
+        .items1{background-color: orange;}
+        .items2{background-color: blue;}
+        .items3{background-color: aqua;}
+        .items4{background-color: aquamarine;}
+        .items5{background-color: chartreuse;}
+        .items6{background-color: darkcyan;}
+        .items7{background-color: crimson;}
+        .items8{background-color: violet;}
+    </style>
+</head>
+<body>
+    <h1>Grid minMax()</h1>
+    <main>
+        <div class="items items1">one Lorem ipsum dolor sit amet.</div>
+        <div class="items items2">two</div>
+        <div class="items items3">three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit cupiditate repellendus corrupti minus repudiandae qui. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quos impedit, consectetur cupiditate delectus ea numquam aliquam totam sed. Placeat sint ullam neque, fugiat commodi fugit asperiores odio quos officia sapiente nostrum, delectus assumenda adipisci consectetur quasi? Aliquam, dolor autem. </div>
+        <div class="items items4">four Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nisi? </div>
+        <div class="items items5">five</div>
+        <div class="items items6">six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+    </main>
+</body>
+</html>

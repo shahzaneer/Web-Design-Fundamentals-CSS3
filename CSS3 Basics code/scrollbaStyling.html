@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS scroll bar styling</title>
+    <style>
+        #test{
+            width: 300px;
+            height: 500px;
+            border: 2px solid black;
+            overflow: scroll;
+
+        }
+
+        #test::-webkit-scrollbar{
+            width: 10px;
+            background-color: grey;
+        
+        }
+        #test::-webkit-scrollbar-track{
+            /* yeh track krta hai k kahan per hain hum  */
+            /* background-color: green; */
+            border-radius: 10px;
+        }
+
+        #test::-webkit-scrollbar-thumb{
+            /* thumb basically wo cheez se jisse hum per neechay krte hain  */
+            border-radius: 10px;
+            background: linear-gradient(red,yellow);
+            
+        }
+
+        #test::-webkit-scrollbar-corner{
+            background:linear-gradient(red,yellow);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS scroll bar styling</h1>
+    <div id="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ad ratione aliquid dolore libero odit dignissimos ex. Nam nihil maiores consequatur ab corporis ad aspernatur modi excepturi optio qui, nobis voluptatem, libero delectus nulla officia non possimus officiis doloribus distinctio nostrum praesentium voluptatibus quae iusto. Nostrum ratione sunt eum repellendus, omnis sint reiciendis nam facilis animi ducimus. Voluptatibus quia doloremque nemo consectetur optio qui sequi enim cupiditate quibusdam quas natus aut officia corrupti, nesciunt illo. Ut incidunt odit iste, expedita a rerum deleniti facere rem blanditiis natus beatae quaerat veritatis ratione perferendis cum officia vel voluptates cumque tenetur error voluptatem ad. Laudantium, inventore atque necessitatibus iure iusto voluptates incidunt assumenda esse tempora eos reprehenderit porro, libero, officia nostrum consectetur dolores modi adipisci nisi recusandae explicabo distinctio? Omnis impedit voluptatum delectus quis doloremque, pariatur incidunt quae exercitationem sit magnam id nam, nisi mollitia aperiam facere similique praesentium expedita earum ipsam vitae, iusto quos sunt? Quasi, labore. Non blanditiis voluptatibus officiis illo vero quis laborum consequuntur facilis unde voluptatum praesentium eaque nesciunt delectus facere officia ipsa totam aliquam iure inventore iste, vitae nihil, consequatur culpa? Voluptatem atque quasi ex, similique maiores accusamus tempore error excepturi aperiam delectus facilis dolorum architecto sint beatae commodi obcaecati maxime ullam eaque laudantium laboriosam voluptatibus! Explicabo harum sed obcaecati corrupti optio dolore laborum ut. Qui, nobis cupiditate deleniti facilis quo incidunt quam beatae odio quaerat sint earum, minus eveniet quis laudantium ea reprehenderit officiis! At assumenda magnam, repellendus tenetur recusandae voluptatibus porro, est obcaecati quis tempore, repudiandae molestias eos quia consequuntur rem! Fugiat, quod autem consectetur at ullam ipsum qui laboriosam enim laudantium eum quas dignissimos totam ipsam odio culpa maiores assumenda mollitia doloribus itaque accusantium aperiam sunt. Autem sint libero ipsa deserunt, quae minima, assumenda sed quam vero soluta dolorem unde ratione obcaecati nam facilis nostrum.
+        
+        <img src="pak1.jpg" alt="">
+    </div>
+</body>
+</html>

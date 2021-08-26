@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Justify content</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 70%;
+            margin: 50px auto;
+
+            display: flex;
+
+            /* justify content --> horizontal alignment of flex items  */
+
+            /* justify-content: center; horizontally centre */
+
+            /* justify-content:flex-end ; right corner */
+
+            /* justify-content: flex-start; by default hai yeh  */
+
+            /* justify-content: space-between;  */
+            /* pura container utilize hoga har div k ander space hoga  */
+
+            /* justify-content: space-around; */
+            /* yahan first aur last me bhi space houta hai baaki space jo beech me houts hai wo double houta hai  */
+
+            justify-content: space-evenly;
+            /* shuru aur akhir me aur tamaam divs k darmiyaan evenly spacing */
+
+
+            
+        }
+        .item1{
+            background-color: aqua;
+        }
+        .item2{background-color: brown;
+        }
+
+        .item3{
+            background-color: tomato;
+        }
+        .item4{
+            background-color:teal;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox Justify content</h1>
+    
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+    </div>
+
+</body>
+</html>

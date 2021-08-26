@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        body{
+            padding: 10px;
+            font: 20px;
+        }
+        h1{
+            font-size: 28px;
+            margin-bottom: 35px;
+        }
+
+        /*first child and last child   */
+        li:first-child{
+            color: red;
+            /* jis tag per lagana hai wo aur :pseudo class name  li k first child ko red krdia gya hai isme child hone zaruri hai   */
+        }
+
+        li:last-child{
+            color: blue;
+            /* last child ko blue kia hai li tag k */
+
+        }
+
+        /* isko hum combination k tor per bhi likh skte hain  */
+        #list2 li:first-child{
+            color: blueviolet;
+
+            /*srff list2 k li ka first child mutasir hoga  */
+            }
+
+        /* nth child */
+
+        li:nth-child(2){
+            border: 2px solid black;
+            /* isse hum kisi bhi child ka number dekar uski css kr skte hain  */
+        /* isme calculations bhi deskte hain jese 2n yani even aur 2n+1 yni odds xD  n=0,1,2,3,4,5,6,7.....*/
+        }
+
+        li:nth-last-child(2){
+            border:2px double rebeccapurple;
+            /* yeh last se counting shuru karega */
+        }
+
+        /* nth of type --> yeh without parent bhi target krleta hai pure page me target krlega  */
+
+        p:nth-of-type(2){
+            background-color: aquamarine;
+        }
+
+        p:nth-last-of-type(1){
+            background-color: chartreuse;
+            /* yeh last se  consider krlega */
+        }
+
+        /* only child  */
+
+        li:only-child{
+            border: 2px dotted black;
+            /* yeh ager only yani aik hi  child hoga isme tou kaam krega */
+        }
+
+        /* only of type srff issi type ka koi aik ho tou kaam krega without child bhhi  */
+
+        h1:only-of-type{
+            border: 2px solid black;
+            /* ab chunkay yeh only child hai isi liay kaam kr rha hai  */
+        }
+
+
+
+
+        
+
+
+
+
+
+
+    </style>
+    <!-- pseudo classes ki nishani name se pehle colon hai  -->
+    
+
+</head>
+<body>
+    <h1>Pseudo classes</h1>
+    <ul id="list1">
+        <li>Pakistan</li>
+        <li>New zealand</li>
+        <li>Germany</li>
+        <li>Canada</li>
+        <li>turkey</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quis nesciunt officiis saepe voluptatem possimus, provident aperiam magnam voluptates aliquid eos quas!
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor praesentium ducimus ipsum officiis, officia labore corrupti vel distinctio quia voluptas possimus accusantium?</p>
+
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis vitae provident, laudantium exercitationem voluptas non.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, eius quod odio, aspernatur neque at explicabo officiis, magni assumenda in animi.
+    </p>
+
+    <ul id="list2">
+        <li>Islamabad</li>
+        <li>Auckland</li>
+        <li>berlin</li>
+        <li>Toronto</li>
+        <li>istanbul</li>
+    </ul>
+    <div id="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ex quidem!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, molestias.</p>
+
+    </div>  
+</body>
+</html>

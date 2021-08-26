@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <!-- tranform -->
+    <!-- CSS transforms allow you to move, rotate, scale, and skew elements. -->
+    <!-- With the CSS transform property you can use the following 2D transformation methods:
+
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix() -->
+
+
+    <style>
+    #box{
+        width: 250px;
+        height: 150px;
+        background-color: tomato;
+        /* transform: translate(30px,80px); */
+        /* yeh translate text k uper aajayega */
+        /* margin: 150px 300px; */
+        /* transform: rotate(90deg); */
+        /* rotate me text aur div rotate hojata hai degree jo dengay uske hisaab se - me bhi deskte hain  */
+        /* transform: skewX(30deg); */
+        /* aik ||gram ki manind rotate hoga yeh X wala x per degree change krega Y wala Y per dono wala simple skew hai jo dono ki vlaues leta hai  */
+        /* transform-origin:left top; */
+        /* t-o jo hai wo by default center se houta hai hum isse change bhi krskte hain t-o jahan yeh fixed krte hain wahan se rotate krta hai point 
+        % dekar bhi krskte hain yeh sb */
+
+        /* transform: scale(2); */
+        /* 2 times ka mtlb hai k height aur width 2 times lelega yeh  */
+        /* transform-origin: left top; */
+
+        /* transform: matrix(1, -0.3, 0.1, 0.0); */
+        /* yeh zyada use nhi houti .. */
+        transform: rotate(0deg) scale(1);
+        transition:transform 1s;
+
+        
+
+    
+
+    }
+
+    #box:hover{
+        /* css me indentation ka kaaafi masla aata hai aur yeh raami css error bhi show nhi krti iska khayaal rkhna hai ! */
+        
+    transform: rotate(180deg) scale(2);
+     /* transform ki values ko ikhatta bhi likha jaaskta hai  */
+        
+    }
+    </style>
+</head>
+<body>
+    <h1>2D Tranform</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut a et quis, error possimus optio sunt dolore. Ut enim nam obcaecati, explicabo laboriosam ea expedita corrupti a omnis voluptatum quia culpa, ratione quisquam ipsam. Illum quia commodi quaerat quidem consequuntur minus blanditiis debitis odio deleniti? Vitae, non. Sit exercitationem minima sequi soluta repellendus similique magni deleniti delectus harum quis, obcaecati tenetur. Velit adipisci ipsa autem possimus dolores dignissimos perspiciatis dolorem tempora esse, inventore optio eligendi reiciendis corporis aut veritatis saepe doloremque voluptas accusamus maxime dolor ullam laborum recusandae cum. Quasi cumque eum eius amet beatae exercitationem enim non esse voluptate asperiores veritatis tempore illo nostrum, illum ipsa mollitia hic aspernatur error nobis incidunt! Quis laborum, et fuga amet unde optio minus alias veritatis dolor vel sunt sequi delectus? Eveniet neque exercitationem accusantium quo corporis ipsam repudiandae quas harum deserunt fugiat, odit reprehenderit. Soluta id aliquid, itaque dolores dolorum iusto repudiandae mollitia totam officia rem, alias quod rerum perspiciatis inventore. Quidem reiciendis quasi incidunt quae rerum veritatis eveniet minus, perspiciatis obcaecati nam exercitationem officiis dolor deserunt quia maiores minima laudantium voluptatibus. Saepe perferendis error necessitatibus, sequi ut animi vero odio sed delectus expedita, quam aut quo distinctio voluptatem mollitia quos.</p>
+    <div id="box">Shahzaneer Ahmed!</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quo veniam magni itaque hic soluta nulla sunt sint, eaque numquam recusandae. Consectetur, pariatur asperiores nesciunt, sed magni ullam iure reiciendis facere, magnam laborum quae. Libero nihil id eum eaque repellat doloribus dicta? Dignissimos ipsam perspiciatis quas dolor alias fuga unde corrupti repudiandae quidem veniam, cupiditate quasi nemo explicabo aliquam nostrum doloribus culpa minima at? Nisi repellendus aut error quas vero odit esse veritatis iste alias iure dolor aperiam illum, voluptas molestias qui incidunt numquam, commodi inventore quasi tenetur voluptate exercitationem voluptatibus. Ipsum officiis laborum fugit. Cupiditate, repudiandae corporis! Repudiandae fugiat quisquam dolores! Odit architecto voluptatum quidem pariatur, laborum recusandae quam nemo iure tempore ad. Consequatur, voluptates. Sunt, fugiat exercitationem, ipsa cumque repudiandae dolores autem doloribus temporibus quod ab reprehenderit et laborum natus corrupti doloremque molestias sapiente earum, pariatur quibusdam inventore impedit quo est! Animi, autem provident? Dolorum laboriosam optio hic non, necessitatibus consequatur, tempora officia vel natus id iste in itaque provident illo consequuntur dolore maxime neque corporis ex, nemo quisquam? Quisquam dolor excepturi modi corrupti quas dignissimos at aut temporibus deleniti? Impedit accusantium corrupti commodi rem? Quaerat eligendi possimus enim? Dolor et vero voluptate libero minima eligendi inventore ullam.</p>
+</body>
+</html>

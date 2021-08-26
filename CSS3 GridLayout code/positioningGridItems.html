@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning grid items</title>
+    <style>
+        .container{
+            margin: 70px 0 0 50px;
+            width: 700px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,200px);
+            grid-gap: 15px 25px;
+            /* positioning me developer toolbar se grid lines ka use hoga yeh jannay k liay k konsi item kahan mojud hai  */
+
+
+        }
+        .item1{
+            background-color: blue;
+            /* grid-row-start:2;
+            /* ab yeh grid Item jo hai 2nd row se start hogi */
+            /* grid-row-end: 3; */
+            /* yeh grid */
+            /* grid-column-start: 3; */
+            /* grid-column-end: 4; */
+
+
+            /* shorthand row k liay hai
+            grid-row aur column k liay hai grid-column dono me pehlay aata hai "start / end" */
+
+            /* grid-row: 2 / 3;
+            grid-column: 3 / 4; */
+
+            /* ager hum iska bhi shorthand krna chahaiyn tou wo bhi possible hai 
+            grid-area hai yeh pehle row ki starting phir ending phir columns ki starting aur ending */
+
+            grid-area: 2 / 3 / 3 / 4;
+
+        }
+        .item2{
+            background-color: red;
+            grid-row-start:2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .item3{
+            background-color: yellow;
+        }
+        .item4{
+            background-color: goldenrod;
+        }
+
+        .item5{
+            background-color: rgb(41, 204, 174);
+        }
+
+        .item6{
+            background-color: hotpink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Positioning grid items</h1>
+
+    <div class="container">
+        <div class="item item1">First</div>
+        <div class="item item2">Second</div>
+        <div class="item item3">third</div>
+        <div class="item item4">fourth</div>
+        <div class="item item5">fifth</div>
+        <div class="item item6">Sixth</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable </title>
+    <style>
+        :root{
+            /* yeh pseudo class root hai isme hum css k variables define krte hain  */
+            /* var -- lazmi lgta hai  */
+            /* jo variable root me bnte hain wo global scope k hamil hotay hain  */
+            /* variable jo class ya id k ander define kiay jatay hain wo local variable kehlatay hain aur unki scope bhi ussi class ya id k ander hoti hai  */
+        
+
+            --bc: blue;
+            /* yeh color k liay variable banaya  */
+            --headFont: verdana;
+            /* yeh font style yani family k liay banay aur use kia 
+            iss trh hum aik hi jagah change kr k har tag me change krskte hain chezon ko  */
+            --body-font: impact;
+        }
+
+        h1{
+            color: var(--bc);
+            font-family: var(--headFont);
+        }
+        
+        h2{
+            color: var(--bc);
+            font-family: var(--body-font);
+        }
+        h3{
+            color: var(--bc);
+        }
+        h4{
+            color: var(--bc);
+        }
+        .s{
+            --paraColor: yellowgreen;
+            color: var(--paraColor);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h2>This is </h2>
+    <h3>Shahzaneer Ahmed</h3>
+    <h4>Sp21-bcs-087</h4>
+    <div class="s">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi incidunt optio quidem nam enim iste neque doloremque delectus laborum aliquid sequi.</p>
+    </div>
+</body>
+</html>

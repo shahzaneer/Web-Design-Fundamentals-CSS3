@@ -1,0 +1,91 @@
+
+        
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: slategray;
+    margin:0;
+    padding: 0;
+}
+#topbar{
+    background-color: mediumpurple;
+    height: 40px;
+
+}
+#topbar ul li{
+    display: inline-block;
+    padding: 0;
+    margin: 5px;
+
+}
+#topbar ul li:hover{
+    font-size: 40px;
+}
+
+#topbar ul{
+    margin: 0%;
+    padding: 0;
+}
+#wrapper{
+    border: 2px solid black;
+    width: 1000px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+}
+#header h1{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+    height: 100px;
+}
+#header{
+    background-color: crimson;
+    color: white;
+}
+#menu{
+    background: lightsalmon;
+    height: 100px;
+}
+#menu ul{
+    margin:0;
+    padding:0;
+}
+#menu li{
+    display: inline-block;
+    padding-top: 15px;
+}
+#menu li a:hover{
+    background-color: crimson;
+    color: white;
+}
+#menu li a{
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#content{
+    width: 800px;
+    float: left;
+    min-height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+    /* min heigh ki property mostly use hoti hai k minimum itna aye aur ager overflow kre tou brh jaye... */
+}
+#sidebar{
+    background: lightblue;
+    width: 200px;
+    float: right;
+    min-height: 500px;
+    
+}
+#sidebar a{
+    text-decoration: none;
+    color: black;
+}
+#footer{
+    background: lightsalmon;
+    clear: both;
+    padding: 5px 10px;
+    text-align: right;
+    /* clear ki property last div me dete hain */
+}

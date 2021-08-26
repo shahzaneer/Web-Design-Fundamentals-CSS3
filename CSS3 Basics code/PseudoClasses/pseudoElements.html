@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        /* pseudo elements me do baar colon houta houta hai --> ::  */
+        /* first leeter ko target krega */
+        li::first-letter{
+            color: wheat;
+            font-size: 30px;
+            /* p me mojud pehla letter targeted */
+            font-weight: bold;
+            background-color: yellowgreen;
+        }
+
+        li::first-line{
+            /* yeh first line ko consider krega */
+            background-color: blueviolet;
+            /* srff first line ko consider krega */
+            
+        }
+        p::selection{
+            background-color: red;
+            color: navy;
+            /* yani hum jo bhi cheez select krengay us per implement houga */
+            /* pooray page per krna hai tou simpe ::selection ayega  */
+
+
+        }
+
+        /* placeholder --> yeh placeholder property k saath use houta hai jese humne use kia tha form me  */
+
+        ::placeholder{
+            color: red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo elements</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, dicta doloremque! Unde quo animi expedita itaque quis nemo ut tenetur doloribus vel, perspiciatis a, fugit fugiat maxime sint ipsam, sed aut! Ipsam debitis omnis quasi sed commodi dolores a assumenda illum aut saepe ipsum, velit, necessitatibus culpa repellendus? Minima porro, in tempore tempora doloribus dolor numquam quasi optio dolorem. Laborum ipsum distinctio dolor consectetur officia corporis maiores doloremque dolorem, fugiat asperiores pariatur, labore repudiandae expedita cupiditate eveniet ipsam ut ratione natus. Aperiam velit atque expedita, veniam rem odit, doloribus neque commodi, consectetur reprehenderit perspiciatis. Est ea quibusdam facilis inventore pariatur, non rerum suscipit eius autem placeat, temporibus vitae reprehenderit. Reprehenderit quia repellendus fugiat pariatur molestias delectus non consequatur excepturi totam, quod laudantium cumque incidunt repudiandae odio sapiente error saepe vero tenetur illum explicabo voluptates? A quis, perferendis saepe necessitatibus aliquid exercitationem eius eligendi labore recusandae hic quos cupiditate enim ut.</p>
+
+    <ul>
+        <li>orange</li>
+        <li>banana</li>
+        <li>chocolate</li>
+        <li>vanilla Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consectetur aperiam ab ducimus modi officia dolorem sapiente repudiandae esse iusto nemo impedit, aut maiores dolores nostrum dicta quis quae natus iste assumenda? Laboriosam dolor omnis cumque quae porro molestias, accusamus doloremque repudiandae distinctio eveniet id voluptate molestiae quisquam dolores veniam.</li>
+        <li>Strawberry</li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ut facilis eos nisi, a laborum, possimus necessitatibus, voluptate repudiandae nesciunt repellendus! Non, repellat unde iusto iste facilis expedita officia itaque, ut mollitia, cumque vero ullam. Repellat aspernatur quaerat est officia veritatis, vel doloribus, dolor eveniet delectus illum rem exercitationem amet.</p>
+
+    <form action="">
+        <label for="">Name</label><br> <input type="text" placeholder="Enter your name">
+    </form>
+</body>
+</html>

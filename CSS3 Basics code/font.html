@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <style>
+        body{
+            font-size: 18px;
+            /* yun dekar agwer hun % me dengsy tou yahan per dia hua 100% tasawwar hoga */
+            /* em jo hai wo parent k size k equal hota hai ager 2 em den gay tou parent se doble hoga and  so on  */
+            /* font-weight: 600; */
+
+        }
+        #shah{
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+            font-size: 100%;
+            margin-bottom: 25px;
+            line-height: 2em;
+            /* font-weight: bolder; */
+            /* yeh font ko bold ya light krta hai  */
+            font-family: arial;
+            /* aik se zyada aaaskte hain isme fonts  */
+            font-style: oblique;
+            font-variant: small-caps;
+            /* yeh tmamaar letters ko capital krdega */
+
+            /* shortcut */
+            /* font: oblique small-caps normal 1em/35px arial,verdana,helvetica; */
+
+
+        }
+        /* isko bhi px me bhi dia kaskta tha  */
+        #shah1{
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+            
+            
+        }
+        #shah1 span{
+            font-size: 4em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>New Zealand</h1>
+
+    <div id="shah">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, illo. Atque sequi cum alias odit maxime dolor consectetur minus corporis, ab natus.</p>
+    </div>
+    <div id="shah1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, illo. Atque  <span>Hello world this is span </span> sequi cum alias odit maxime dolor consectetur minus corporis, ab natus.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box decoration break </title>
+    <style>
+        span{
+            background:linear-gradient(red,yellow) ;
+            font-size: 21px;
+            line-height: 50px;
+            border: 1px solid black;
+            border-radius: 5px;
+           /* -webkit-box-decoration-break: clone; */
+
+
+            /* yun border lagaanay se border unevenly lagay ga aur jo decoration waala scene hai usme problem hai  */
+            /* yeh property abhi chrome me nhi chalti isliay hamain webkit ka prefix lagana hoga slice by default value hai lgao na lgao aur clone se border ka stype har cheez per lg jata hai  */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Box decoration break </h1>
+    <span> Lorem ipsum dolor <br> sit amet  <br> consectetur adipisicing elit. Quam, <br> temporibus!</span>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaceHolder-Shown</title>
+
+    <style>
+        input{
+            margin: 10px;
+            width: 300px;
+            padding: 5px;
+            border: 2px dotted black;
+        }
+
+        input:placeholder-shown{
+            /* jb tk placeholder dikhta rahega */
+
+            border: 3px solid red;
+
+            /* yeh srff input aur text area me chalta hai  */
+            /* yeh date month week time etc me kaam nhi krta hai  */
+
+        }
+
+        input[type="text"]:placeholder-shown{
+
+            /* kisi makhssos property ki css krni ho tou yun hoga yeh use */
+            border: 3px solid green;
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>PlaceHolder Shown</h1>
+    <form action="">
+        <input type="text" placeholder="Enter Name"><br>
+        <input type="text" placeholder="Email"><br>
+        <input type="number" placeholder="percentage"><br>
+        <input type="phone" placeholder="number"><br>
+
+        <input type="month" placeholder="number"><br>
+
+    </form>
+</body>
+</html>

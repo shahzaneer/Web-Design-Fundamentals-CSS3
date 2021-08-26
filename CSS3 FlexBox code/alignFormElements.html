@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align form with flexbox</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        
+        }
+
+        #wrapper{
+           background-color: tomato;
+           list-style: none;
+           margin: 50px;
+           padding: 20px; 
+        }
+
+        #wrapper li{
+            display: flex;
+            padding: 5px 0;
+            justify-content: flex-end;
+        }
+
+        #wrapper li label{
+            flex:1 ;
+        }
+
+        /* now using media quieries for making the input tags responsive */
+
+        @media screen and (min-width:1200px) {
+            #wrapper li input{
+            flex:8 ;
+        }
+        }
+
+        @media screen and (min-width:990px) {
+            #wrapper li input{
+            flex:6 ;
+        }
+        }
+
+        @media screen and (min-width:768px) {
+            #wrapper li input{
+            flex:5;
+        }
+        }
+
+        @media screen and (min-width:500px) {
+            #wrapper li input{
+            flex:4 ;
+        }
+        }
+
+        @media screen and (min-width:300px) and (max-width:499px) {
+            #wrapper li{
+                flex-direction: column;
+            }
+            #wrapper li input{
+            flex:3 ;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Align form with flexbox</h1>
+    <form action="">
+        <ul id="wrapper">
+            <li>
+                <label for="">Name</label>
+                <input type="text"><br> <br>
+            </li>
+            <li>
+                <label for="">Class</label>
+                <input type="text"><br> <br>
+            </li>
+            <li>
+                <label for="">Email</label>
+                <input type="email"><br> <br>
+            </li>
+            <li>
+                <button type="save">Save</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox wrap and flow</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 150px;
+            margin: 50px auto;
+
+            display: flex;
+            /* flex-direction: row; */
+            flex-direction: row;
+
+            /* jb hum width ya height khasoosi tour per determine krden aur hamarya columns ya rows me data overflow horha ho tou hum wrap use krengay */
+
+            /* flex-wrap: nowrap; BY DEFAULT  */
+            /* flex-wrap: wrap; */
+            /* jese hi data overflow hua neechay wali row me aagya */
+
+            /* flex-wrap: wrap-reverse; */
+            /* overflow data reverse me houga  */
+
+
+            /* flex flow --> flex-direction , flex-wrap */
+
+            /* flex-flow: column nowrap; */
+
+
+
+           
+        }
+        .item1{
+            background-color: aqua;
+        }
+        .item2{background-color: brown;
+        }
+
+        .item3{
+            background-color: tomato;
+        }
+        .item4{
+            background-color:teal;
+        }
+        .item5{
+            background-color:springgreen;
+        }
+        .item6{
+            background-color:slateblue;
+        }
+        .item7{
+            background-color:salmon;
+        }
+        .item8{
+            background-color:red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox wrap and flow</h1>
+    
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+        <div class="items item5">five</div>
+        <div class="items item6">six</div>
+        <div class="items item7">seven</div>
+        <div class="items item8">eight</div>
+    </div>
+
+</body>
+</html>

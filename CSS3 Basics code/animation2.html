@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2 </title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            margin-left: 20px;
+
+            animation: sample 2s 5s  forwards;
+            /* shorthand me bhi yeh use hoti hai  */
+            /* animation-fill-mode:both; */
+            /* backwards per animation apply hogyi hogi directly 0% wali uske bad delay hoga aur kaam anjam tk pohanchay ga */
+            /* forward me wo animation ko pura krne k baad apni initial state per na ayega  */
+            /* both me dono kaam hongya none me kuch na hoga */
+            animation-play-state: paused;
+
+
+
+        }
+        .box:hover{
+            /* animation-play-state: paused; */
+            /* yani jb hum hover kren tou yeh animation ruk jaye */
+            animation-play-state: running;
+        }
+        @keyframes sample{
+            0%{
+                background-color: yellow;
+                width: 250px;
+            }
+            50%{
+                background-color: green;
+                width: 350px;
+            }
+            100%{
+                background-color: red;
+                width: 450px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Animation fill mode</h1>
+
+    <div class="box">
+
+    </div>
+</body>
+</html>

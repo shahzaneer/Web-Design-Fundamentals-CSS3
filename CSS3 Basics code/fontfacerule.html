@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Face Rule</title>
+    <!-- isme yeh hoga k ager app koi font dete hain aisa jo user k browser me mojud nhi hai tou yeh usse download krdeta hai aur user ko exactly wese hi dikhta hai font jesa apne lagaaya hai -->
+    <!-- web safe font wo fonts hain jo taqreebn har operating system me install hote hain  -->
+    <!-- fonts download krne k liay aik site hai fonts.squirrel  -->
+    <style>
+        @font-face{
+            font-family:openSans;
+            src: url(fonts/OpenSans-SemiboldItalic-webfont.eot) , url(fonts/OpenSans-SemiboldItalic-webfont.woff);
+        }
+        h1{
+            font-family: openSans;
+        }
+
+        #s{
+            border: 2px double red;
+            font-family: openSans;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Shahzaneer Ahmed</h1>
+
+    <div id="s">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit natus nisi nostrum magni incidunt sint laudantium numquam. Accusamus autem sequi maxime recusandae?</p>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct child selector </title>
+    <style>
+        #list1 li{
+           color: red;
+           /* list1 me jitne bhi li tags aarhay hain unko red krdo yeh donoko krdega red  */
+           /* direct child k liay hum > ka sign uyse krte hain yeh srff direct child walo ko tagert krta hai   */
+
+        }
+        #list1 > li{
+            color: green;
+            /* list1 naami cheez me jitne bhi direct li hain srff unko taget kro sabko nhi .. uper walay ne sbko laal kia aur isne direct childs ko green krdia  */
+        }
+    </style>
+</head>
+<body>
+    <h1>Direct child selector </h1>
+
+    
+
+        <h3>Hello Combination selectors </h3>
+        <ul id="list1">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+            <ul>
+                <li>lemon</li>
+                <li>Citrus</li>
+                <li>Grapefruit</li>
+            </ul>
+            <li>plum</li>
+        </ul>
+    
+</body>
+</html>

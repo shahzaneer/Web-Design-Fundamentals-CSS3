@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+    <style>
+        img{
+            /* clip-path: circle(30% at 50% 50%); */
+            /*circle k liay radius hai first thing second and last are x axis and y axis respectively  */
+            /* yeh image ko different shapes me crop karega */
+
+
+
+            /* clip-path: ellipse(10% 40% at 50% 40%); */
+            /* ellipse k liay 4 properties deni hain first is horizontal radius second is vertical radius third is x axis fourth is y axis   */
+
+            /* clip-path: inset(40% 40% 20% 20%); */
+            /* yeh aik rectangle stype image cut krega  iski iskay liay top pehli value hai aur baaki values usse clockwise aarhi hain top right bottom left   */
+
+
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            /* isme hum kisi bhi trh ki img cropkrskte hain jitne point dengay utna polygon bnega teen per triange bana hai pehla top consider hota hai top kka x axis aur y axis dia hai baaki clockwise aatay hain */
+
+
+            /* aik site hai jisse app utha skte hain cip path ka css code drag drop krk 
+            site : bennetfeely: .com; */
+
+            /* aik div ko bhi clip kia jaaskta hai mehiz image hi ko clip nhi kia jaataa: . .; */
+        }
+        #s{
+           width: 500px;
+           height: 600px;
+           background-color: blueviolet;
+           clip-path: circle(40% at 50% 50%); 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Clip Path</h1>
+
+    <img src="gcu1536x800.jpg" alt="">
+
+    <div id="s">
+
+    </div>
+
+    
+</body>
+</html>

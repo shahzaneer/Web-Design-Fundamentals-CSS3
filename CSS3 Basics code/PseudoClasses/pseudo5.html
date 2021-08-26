@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes 5</title>
+    <style>
+        /* focus hai jb hmne click kr k rkha hua ho  */
+
+        input:focus{
+            /* border: 5px solid red; */
+            font-size: 40px;
+            /* check box select box etc me kaam nhi krta hai yeh */
+        }
+        /* checked ---> yeh srff checkbox aur select box me kaam krega */
+
+        input[type="checkbox"]:checked + label{
+            /* box-shadow: 0px 0px 0 3px red; */
+            color: red;
+            /* + label lagakr humne kahan hai k iske bad jo adjacent label aarha hai usse box shadow dedo */
+        }
+
+        /* disabled and enabled */
+        /* humne input ka attribute dia hai disabled tou yeh focus na hopayega  */
+        
+        /* input:enabled{
+            border: 5px solid navy;
+        } */
+
+        input:disabled{
+            border: 5px solid yellow;
+        }
+
+        /* required and optional  */
+        /* required ka mtlb hai kay ager koi is field ko dalay bagair hi submit krde tou aik error message ayega  */
+
+        input:required{
+            border: 4px solid greenyellow;
+            background-color: aqua;
+        }
+
+        /* input:optional{
+            background-color: blue;
+        } */
+
+        /* in range aur out range use hoga numbers per jinki range di hui hogi humne  */
+
+        input:out-of-range{
+            background-color: tomato;
+            /* jese hi range se bahir dengay hum koi number tou error msg bhi ayega aur hum uski styling bhi change kerskte hain  */
+        }
+
+        input:in-range{
+            background-color: coral;
+
+        }
+
+        /* read only and read write   */
+        /* hum read only deingay ager input tag me aur aik makhsoos by default value dedengay tou hum usse change nhi ker payengay aur is trh styling bhi hopayegi  */
+
+        input:read-write{
+            background-color: cornflowerblue;
+            /* ab chunkay saaray read write hoskte hain tou yeh yun hoga */
+        }
+        /* valid invalid ---> */
+        /* yeh jb hamara koi givne option invalid ho tou is trh hum iski css krskte hain  */
+
+        input:invalid{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:red;
+        }
+
+        /* default--> pehle se hi koi value aarhi ho yeh radio select check  k saath use hoti hai  */
+        input:default{
+            
+            box-shadow: 0 0 0 3px red;
+            /* yani by fefault jo value hogi usko target krega */
+        }
+
+        option:default{
+            color: red;
+        }
+
+        /* root --> css vaeriables ko define krne k liay use houta hai  */
+
+        :root{
+            --mainColor : blue;
+            /* root ko hum usually sbse uper define krte hain takay hum baad me iske variables ko use kr payen  */
+
+        }
+        
+
+        h1{
+            color: var(--mainColor);
+            /* yahan humne var function ko use krte huay use krlia hai mainColor ko */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo classes 5</h1>
+    <form action="">
+        <fieldset>
+            <legend>Immigration Management System</legend>
+        <label >Name</label>&nbsp;<input type="text" placeholder="Enter your name" readonly/><br><br>
+        <label >Password</label>&nbsp;<input type="password" placeholder="password>6 letters" required/><br><br>
+        <label >Age</label> &nbsp; <input type="number" min="18" max="25"><br><br>
+        <label >Email</label> &nbsp; <input type="email"> <br> <br>
+        <label >Gender</label>&nbsp;<input type="radio" id="male" name="gender"><label for="male">Male</label><input type="radio" id="female" name="gender"><label for="female">Female</label><br><br>
+        <label >Hobbies</label>&nbsp;<input type="checkbox" id="fot"><label for="fot">Football</label>&nbsp;<input type="checkbox" id="cric"><label for="cric">Cricket</label>&nbsp;<input type="checkbox" id="bok" checked ><label for="bok" >Book reading</label>&nbsp;<input type="checkbox" id="trvl"><label for="trvl">Travelling</label><br><br>
+        <label >Residence</label for="countree"> <select name="" id="countree">
+                                <optgroup label="country" >
+                                    <option value="" selected>Pakistan</option>
+                                    <option value="">Afghanistan</option>
+                                    <option value="">Nepal</option>
+                                    <option value="">Sri lanka</option>
+                                    <option value="" >India</option>
+                                </optgroup>
+                                <optgroup label="immigration">
+                                    <option value="">Canada</option>
+                                    <option value="">USA</option>
+                                    <option value="">New Zealand</option>
+                                    <option value="">Austrailia</option>
+                                    <option value="">Germany</option>
+                                </optgroup>
+                               
+                                </select> 
+                                <br><br>
+        <label >city</label> <input list="abc"   >
+                                <datalist id="abc">
+                                    <option value="Lahore">
+                                    <option value="Karachi">
+                                    <option value="Islamabad">
+                                    <option value="Multan">
+                                    <option value="Rawalpindi">
+
+                                </datalist><br><br>
+        <label for="">upload file</label> <input type="file" accept="img/*"/><br><br>                        
+        
+
+
+        <label >Message for us</label> &nbsp;<textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <button>submit</button>
+
+
+
+
+
+
+    </fieldset>
+
+
+    </form>
+</body>
+</html>

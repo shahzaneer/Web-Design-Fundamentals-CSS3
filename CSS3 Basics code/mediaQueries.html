@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: white;
+            font-size: 100px;
+        }
+        @media screen and (max-width:1200px){
+            /* yeh aik media screen bnaye gyi hai aur isme aik condition di hui hai k jese hi screen ki width 1200px ya zyada hojaye tou yeh media screen kaam nhi kregi usme  */
+            body{
+                background: pink;
+                font-size: 70px;
+                /* yun fontsize bhi change kia jaskta hai  */
+            }  
+        }
+        @media screen and (max-width:1000px){
+            body{
+                background: orange;
+                font-size: 50px;
+            }
+        }    
+
+        @media screen and (max-width:700px){
+            body{
+                background: yellow;
+                font-size: 25px;
+            }
+        }    
+
+        @media screen and (max-width:480px){
+            body{
+                background: yellowgreen;
+                font-size: 15px;
+            }
+        }  
+        
+        /* jiski screen 1200 se bari hogi usse white dhikhayga , jiski 1200 aur 1000-1 tk hogi usse pink dhikhayga jiski 1000 se 700-1 tk hogi usse orange dhikhayga jiski 700 se 480 tk hogi usse yellow dhikhayga aur usse kam wakon ko yellowgreen  */
+        /* issi trh hum different screen resolutions ko different css dhikhaskte hain  */
+
+    </style>
+</head>
+<body>
+    <h1>Media Query -- Screen</h1>
+</body>
+</html>

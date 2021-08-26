@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping grid items</title>
+    <!-- z index property ko use kr k hum iska stack flow change krskte hain  -->
+    <style>
+        body{
+            margin: 0; padding: 0;
+        }
+
+        main{
+            margin: 50px auto 0;
+            width: 300px;
+            display: grid;
+
+            grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 150px);
+
+        color: navy;
+        background-color: lightgray;
+        }
+
+        .item{
+            max-width: 150px;
+        }
+
+        
+        .items1{background-color: blue;
+        grid-column: 1/ span 2;
+        grid-row: 1/span 2; 
+        align-self: start; 
+          
+        }
+        .items2{background-color: yellow;
+            grid-column: 1/ span 2;
+        grid-row: 1/span 2;
+        align-self: center;
+        justify-self: center;
+        z-index: 1; 
+        /* 1 krne se uper aagya sbse  */
+        
+    }
+        .items3{background-color: orange;
+
+            grid-column: 1/ span 2;
+        grid-row: 1/span 2;
+        align-self: end;
+        justify-self: end; 
+        z-index: 2;   
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>Overlapping grid items</h1>
+    <main>
+    <div class="item items1">one Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, consectetur. Lorem ipsum dolor sit amet.</div>
+    <div class="item items2">two Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, expedita. Lorem ipsum dolor sit amet.</div>
+    <div class="item items3">three Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, nesciunt! Lorem ipsum dolor sit amet.</div>
+    </main>
+</body>
+</html>

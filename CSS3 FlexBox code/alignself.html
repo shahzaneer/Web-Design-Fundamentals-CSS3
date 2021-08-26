@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox align self</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 70%;
+            margin: 50px auto;
+            height: 400px;
+
+            display: flex;
+
+            
+            /* align-items: baseline; */
+
+            /* align items --> saari items ki alignment krti hai jbke align self kisi aik makhssoos cell ki alignment k liay use hogi (vertcal)*/
+
+            align-items: flex-start;
+            
+            
+
+            
+        }
+        .item1{
+            background-color: aqua;
+            /* align-self: center; */
+            /* align-self: flex-start; */
+
+            /* align-self: flex-end; */
+
+            /* align-self: auto; jo tamaam divs ki hogi wo leli jayegi alignment */
+
+
+        }
+        .item2{background-color: brown;
+        }
+
+        .item3{
+            background-color: tomato;
+            
+        }
+        .item4{
+            background-color:teal;
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox align self</h1>
+    
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+    </div>
+
+</body>
+</html>

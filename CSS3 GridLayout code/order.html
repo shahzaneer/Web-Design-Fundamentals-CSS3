@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        main{
+            background-color: lightgray;
+            width: 650px;
+            margin: 50 auto;
+            display: grid;
+            color: white;
+            grid-template-columns: repeat(3,1fr);
+
+            grid-template-rows: repeat(2,150px);
+        }
+        .items1{background-color: orange; order: 1; 
+        /* 1 jayega last position per  */
+        }
+        .items2{background-color: blue;
+        /* order: 0; 0 per apni position per hi rahega div 0 hai default value */
+        order: 2;
+        }
+        .items3{background-color: aqua; order: 3;}
+        .items4{background-color: rgb(14, 212, 47); order: 6;}
+        .items5{background-color: chartreuse; order: 5;}
+        .items6{background-color: darkcyan; order: 4;}
+        /* ager sb divs ko order dediay jayen tou yeh apne order k hisaab se maintain hongya doc me  */
+
+        /* order media queries me use kr k kaafi faiday mand hoskte hain */
+        
+    </style>
+</head>
+<body>
+    <h1>order</h1>
+    <main>
+        <div class="items1">One</div>
+        <div class="items2">two</div>
+        <div class="items3">three</div>
+        <div class="items4">four</div>
+        <div class="items5">five</div>
+        <div class="items6">six</div>
+    </main>
+</body>
+</html>

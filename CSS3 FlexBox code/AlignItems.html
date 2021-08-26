@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox align items</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 70%;
+            margin: 50px auto;
+            height: 400px;
+
+            display: flex;
+
+            /* align items --> vertically align krti hai items ko flex k  */
+
+            /* align-items: flex-start; yeh by default hota hai  */
+
+            /* align-items: flex-end; */
+            /* neechay chali gyin  */
+            /* align-items: center;   */
+
+
+            align-items: baseline;
+            /* jahan se text start horha hai wahan se align ment start krta hai yeh  */
+
+            
+
+            
+        }
+        .item1{
+            background-color: aqua;
+        }
+        .item2{background-color: brown;
+        }
+
+        .item3{
+            background-color: tomato;
+            height: 70px;
+            font-size: 35px;
+        }
+        .item4{
+            background-color:teal;
+            font-size: 11px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox align items</h1>
+    
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+    </div>
+
+</body>
+</html>

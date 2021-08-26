@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation css </title>
+    <style>
+        .card{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            line-height: 300px;
+            /* takay centre me hojaye line */
+            margin: -150px;
+            /* centre me krne k liay */
+            background-color:wheat;
+            color: navy;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 0 0 15px rgb(7, 48, 233);
+            /* animation-name: sample; */
+            /* jo animation ka frame implement krna hai wo ayega yahan  */
+            /* animation-duration: 3s; */
+            /* animation kitni dair tl chalti rehni chahiay  */
+
+            /* animation-iteration-count: 5; */
+            /* animation-direction: alternate; */
+
+            /*kitni baar animation chalni chahiay  */
+            /* animation-direction: reverse;  100% se 0% tk yani reverse */
+
+            /* alternate means aik baar jayega from per aik baar jayega two per */
+            /* iska shorhand yun banega */
+
+            animation:sample 2s 3s infinite alternate cubic-bezier(0.1,0.4,1.0,0.1);;
+
+            /* animation-timing-function:linear; */
+            /* animation-timing-function: steps(4); */
+
+            /* animation-timing-function: cubic-bezier(0.1,0.4,1.0,0.1); */
+            /* 4 steps me hum isko define krskte hain  */
+
+        }
+
+
+        /* yeh frame bananay ka aik faida hai k isko bana kr app ko kahein bhi yeh animation use krskte hain */
+
+       @keyframes sample{
+           0%{
+                border-radius: 0%;
+           }
+           50%{
+            border-radius: 50%;
+            background-color: tomato;
+           }
+           100%{
+               background-color: aquamarine;
+           }
+           /* isko 0 se 100% k darmiyaam me kr k parts me bhi krskte hain jo zyada famous hai aur from to  */
+       } 
+    </style>
+</head>
+<body>
+    <h1>Animation css </h1>
+
+    <div class="card">
+        Shahzaneer ahmed
+    </div>
+</body>
+</html>

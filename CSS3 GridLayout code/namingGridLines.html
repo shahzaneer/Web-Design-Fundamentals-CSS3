@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Naming grid lines </title>
+    <style>
+        h1{
+            font-family: 'Gugi',cursive;
+            text-align: center;
+        }
+        *{
+            margin: 0; padding: 0;
+        }
+        main{
+            text-align: center;
+        }
+        .container{
+            width: 75%;
+            margin: 50px auto;
+            box-sizing: border-box;
+            color: white;
+
+            display: grid;
+            /* grid naming yahan hi template me di jati hain */
+            grid-template-rows: [header-start] 60px [header-end menu-start] 60px[menu-end box-start] 100px [box-end content-start] 200px[content-end footer-start] 60px;
+            /* is trh di gyi naming ko hum neechay utilize krskte hain  */
+            /* row se hum height derhay hotay hain  */
+
+            grid-template-columns: repeat(3, [col-start] 1fr) [col-end] 150px;
+            /* yahan repeat k bad space nhi ayega wagirna yeh rpoterty nhi chalegi */
+            /* columns ---> width ko determine krte hain */
+           
+            
+            grid-gap: 15px;
+            /* kisi bhi cheez ko last tk krte hain tou -1 dete hain last me  */
+
+            /* jis grid ki row ko hym define krte hain usse explicit grid aur jisse define nhi kia wo hai implicit grid  */
+
+        }
+
+        .header{
+            background: orangered;
+            grid-row:  header-start/ header-end;
+            /* line 1/2 ko jo name dia tha wo likh dia yeh technique kaam ayegi commplex projects me  */
+            /* grid-column: 1 / -1 ; */
+            grid-column: col-start / -1;
+
+            
+        }
+        .menu{
+            background: greenyellow;
+            grid-row: menu-start/menu-end;
+            grid-column: 1/-1;
+             
+            
+        }
+        .box1{
+            background: hotpink;
+            
+            
+        
+        }
+        .box2{
+            background: purple;     
+        }
+        .box3{
+            background: tomato;
+        }
+        .content{
+            background: cyan;
+            grid-row:box-end/footer-start;
+            grid-column:1/4 ;
+            /* ab smjh aaajaye ga saani se yeh kam */
+        }
+        .sidebar{
+            background: linear-gradient(cyan,blue); 
+            grid-row:3/5 ;
+            grid-column:4/5;
+
+
+        }
+        .footer{
+            background: slategrey;
+            grid-row: 5/6;
+            grid-column: 1/5;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Naming grid lines</h1>
+    <main>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item menu">Menu</div>
+        <div class="item box1">Box1</div>
+        <div class="item box2">Box2</div>
+        <div class="item box3">Box3</div>
+        <div class="item content">Content</div>
+        <div class="item sidebar">SideBar</div>
+        <div class="item footer">Footer</div>
+    </div>
+    <!-- it cofnused me alot but it is a very easy concept bss lines ko dekhna hai aur yeh yaad rkhna hai k rows jo hum lete hain wo height determine krti hain aur columns width determine krte hain grid objects ka  -->
+</main>
+</body>
+</html>

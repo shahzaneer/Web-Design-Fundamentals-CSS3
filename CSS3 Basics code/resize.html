@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize</title>
+    <style>
+        #s{
+            width: 300px;
+            border: 2px solid black;
+            background-color: blue;
+            /* resize property overflow k bagair kaam nhi karegi 
+            overflow auto lengay tou kregi kaam */
+            /* resize k through user div ko resize kr skta hai  */
+            overflow: auto;
+            /* resize: horizontal; */
+            /* resize: vertical; */
+            resize: both;
+
+            /* form k tag text area me yeh property by default lgi hui hoti hai  */
+
+
+
+        }
+        #sd{
+            resize: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Resize</h1>
+    <div id="s">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nihil quaerat dolor commodi, esse facere recusandae repellat nostrum ipsum vel eligendi dolorem?</p>
+    </div>
+
+    <textarea name="" id="sd" cols="30" rows="10">Message us</textarea>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes 2 </title>
+    <style>
+        /* first of type - last of type inka mtlb hai k jo kisi tag ka first ya last type hoga */
+        h1:first-of-type{
+            color: darkslateblue;
+            /* h1 jo sbse pehla hAI  doc me wo consider hua parent me bhi jo pehla hoga usse bhi consider krlega  */
+        }
+        h1:last-of-type{
+            color: darkmagenta;
+            /* h1 jo last hai doc me wo consider hua  same as above  */
+
+        }
+
+        /* empty -- */
+        div:empty{
+            border: 2px solid palevioletred;
+            /* jo empty cheez hogi usse target krlega yeh yeh whote spaces k saath target nhi karega*/
+        }
+        
+        /* not */
+        /* jb humne general css ki hui hoti hai kisi tag ki tou wo pure document me aati hai jb humne kisi khas id aur class me us css ko implement nhi krna houta tou yeh use hoti hai  */
+
+        p:not(.box){
+            color:blueviolet;
+            /* box class k elawa harjagah jahan p hain unko box ka rang dedega */
+        }
+        /* lang --> language hai  */
+
+        p:lang(de){
+            color: aqua;
+            /* language ka hawala dekar kisi bhi element tk pohancha jaaskta hai  */
+        }
+        
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo classes 2</h1>
+    <div></div>
+    <ul id="list1">
+        <li>Pakistan</li>
+        <li>New zealand</li>
+        <li>Germany</li>
+        <li>Canada</li>
+        <li>turkey</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quis nesciunt officiis saepe voluptatem possimus, provident aperiam magnam voluptates aliquid eos quas!
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor praesentium ducimus ipsum officiis, officia labore corrupti vel distinctio quia voluptas possimus accusantium?</p>
+
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis vitae provident, laudantium exercitationem voluptas non.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio, eius quod odio, aspernatur neque at explicabo officiis, magni assumenda in animi.
+    </p>
+
+    <ul id="list2">
+        <li>Islamabad</li>
+        <li>Auckland</li>
+        <li>berlin</li>
+        <li>Toronto</li>
+        <li>istanbul</li>
+    </ul>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ex quidem!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, molestias.</p>
+
+
+    </div>
+    <h1>Shahzaneer ahmed</h1> 
+    <p lang="en">Hello welcome to our website</p>
+    <p lang="fr">Bonjour bienvenue sur notre site</p>
+    <p lang="de">Hallo willkommen auf unserer Website</p>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS !important hack for priority</title>
+    <!-- css me jb hum styling krte hain tou differnt priority level houtay hain , tag name >classname>idname>inline styling 
+    lekin jisme humne !important use kia usse priority mil jaati hai  -->
+
+    <style>
+
+        body{
+            font-size: 40px;
+            font-family: cursive;
+            text-align: center;
+        }
+        h2{
+            color: red;
+            /* tag ki priority sbse kam thi tou class laganay per gya */
+        }
+
+        .class1{
+            color: green !important;
+            /* class > id tou id lganay per gya  */
+            /* class ko priority zyada deni hai tou yahan hack use krengay !important */
+
+            /* ab class ki priority sbse zyada hogi tou yehi lagega yahan */
+
+            /* yeh tag har property per alag alag dena hoga  */
+        }
+
+        #id1{
+            color: chartreuse;
+
+            font-size: 25px !important;
+            /* id> inline styling tou inline style k lagaanay per gya  */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>CSS !important hack for priority</h1>
+
+    <h2 id="id1" class="class1" style="color: springgreen;" >Shahzaneer Ahmed! </h2>
+</body>
+</html>

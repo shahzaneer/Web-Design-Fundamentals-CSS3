@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Units</title>
+
+    <style>
+        html{
+            font-size: 60px;
+        }
+        body{
+            margin: 0;
+        }
+
+        #s{
+            border: 2px solid black;
+            background-color: blueviolet;
+            font-size: 0.5rem;
+            /* width: 100vw; */
+            /* yeh viewport ka option hai yeh full screen cover krta hai aur 100 parts me divided hai  height ka bhi same scene hai  vh aur vw use krte hain height aur width*/
+            width: 50vmax;
+            /* vmax ka mtlb hai k width jiski max hogi uski width lega dono me se yahan sbse bara 100 hai tou isne 100li hai height  and vice versa */
+            height: 100vh;
+            /* font-size: 1vw; fonts aisay bhi diay jasktay hainn  */
+            
+
+
+        }
+
+        /* em aur rem new units hain yeh font size dene k liay use hoti hain normally yeh apne parent k equal hota hai aur uske accordingly kaam krta hai  */
+        /* 1 em by default 16px houta hai google chrome me  */
+        /* rem hamesha 16 k hisaab se hi leta hai browser k hisaab se hi leta hai by default font size parent ka ager barhaya jaye tou bhi nhi brhta  isko barhanay k liay html { font size :10px ;} kr k change kr skte hain */
+    </style>
+</head>
+<body>
+    <!-- <h1>Css Units</h1> -->
+
+    <div id="s">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, ipsum. Fuga sed velit quo iusto vero temporibus fugiat in rerum nobis illum.</p>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is pseudo class</title>
+    <style>
+        #test1 :is(h1,h2,p){
+            font-family: cursive;
+            /* is pseudo element ko use krne se hamari file ka size kam houta hai aur is wajah se site jaldi load hoti hai so it is a good practice */
+        }
+
+        :is(#test1,#test2) p{
+            color: red;
+            /* it can be used in this way :p */
+        }
+
+        :is(#test1, #test2) p:hover{
+            color: green;
+        }
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Is pseudo class</h1>
+    <div id="test1">
+        <h1>Section 1</h1>
+        <h2>sub heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur possimus eius sunt explicabo tempora consequatur aliquam! Vero odio quasi similique consequuntur ipsa, consequatur aperiam ducimus! A quo sequi hic laboriosam, accusamus esse accusantium quisquam at ut deserunt nulla earum incidunt ea repellat cum, eum corrupti eius officia vel vitae itaque.</p>
+        <h3>sub heading 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sit!</p>
+    </div>
+
+    <hr>
+
+    <div id="test2">
+        <h1>Section 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt unde laborum similique. Voluptates accusantium unde omnis debitis ipsum consequuntur, eum magni dolores labore officia quo possimus facere nobis sequi pariatur itaque incidunt ullam blanditiis doloribus. Illo, neque? Odit maxime repellendus quas nesciunt impedit. Assumenda ullam optio officiis nobis temporibus vitae.</p>
+    </div>
+</body>
+</html>

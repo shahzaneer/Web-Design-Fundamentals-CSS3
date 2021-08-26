@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #697a47;
+
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+header ul{
+    list-style: none;
+    /* takay dot khtm hojaye */
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    max-width: 370px;
+
+
+}
+
+header a{
+   color: white; 
+}
+
+#logo{
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: cursive;
+
+}
+
+#menu li{
+    padding: 10px;
+}
+
+#social_links li{
+    padding: 10px;
+}
+
+#main{
+    display: flex;
+    
+}
+
+aside{
+    flex:0 0 20vw;
+    background-color: beige;
+}
+
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+
+aside img{
+    width: 100%;
+}
+
+aside ul a{
+    color: #697a47;
+    padding: 10px;
+
+    display: block;
+    
+    border-bottom: 1px solid grey;
+}
+article{
+    padding: 10px;
+}
+.services_container{
+    display:flex;
+
+    justify-content: space-between;
+    flex: wrap;
+}
+
+.service_box{
+    border: 1px solid #eeee;
+
+    flex-basis: 32%;
+    padding: 10px;
+
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service_box img{
+    width: 100%;
+    /* relative unit hai isne apne parent ki width ko lia hai  */
+}
+
+.service_box h3{
+    margin: 5px 0 10px;
+}
+
+.service_box p{
+    margin: 0 0 10px;
+}
+
+.call_to_action a{
+  background-color: grey;
+  color:white;
+  border:2px solid transparent ;
+  padding: 8px 13px;
+  display: block;  
+}
+
+.call_to_action a:hover{
+    background-color: lightgray;
+    color: grey;
+}
+
+.call_to_action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+footer{
+    background-color: #697a47;
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+}
+
+/* for making it responsive adding media queries */
+
+@media screen and (max-width:850px) {
+
+    aside{
+        flex:0 0 30vw;
+    } 
+    
+    .service_box{
+    
+        flex-basis: 48%;
+
+     
+    }
+
+
+    
+}
+
+@media screen and (max-width:600px) {
+
+   header{
+       flex-direction: column;
+       
+   } 
+   #logo{
+       order: -1;
+   }
+
+   article{
+       order: -1;
+   }
+
+   #main{
+       flex-direction: column;
+       
+   }
+
+   .services_container{
+       flex-direction: column;
+       align-items: center;
+   }
+
+   h3{
+       text-align: center;
+   }
+}
+
+/* responsive krte huay koshish honi chahiay k neechay scroll bar na ayee! */
+

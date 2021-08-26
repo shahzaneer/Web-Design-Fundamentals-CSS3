@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto fill and auto fit</title>
+    <style>
+        body{
+            font-family: cursive;
+            padding: 0; margin: 0;
+        }
+        main{
+            width: 600px;
+            margin: 50px auto;
+            background-color: grey;
+
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit ,100px );  */
+            grid-template-columns: repeat(auto-fit ,minmax(150px,1fr) );
+            /* colums ki auto fit krdia hai  */
+            /* auto fills khaali bharta hai lines mojud hoti hain auto fit lines ko adjust krdeta hai yeh developer toolbar se dekha jaaskta hai  */
+            grid-template-rows: repeat(3,100px);
+        }
+        .items1{
+            background-color: aquamarine;
+        }
+        .items2{
+            background-color: blue;
+        }
+        .items3{
+            background-color: chartreuse;
+        }
+        .items4{
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h1>Auto fill and auto fit</h1>
+
+    <main>
+        <div class="items1">one</div>
+        <div class="items2">two</div>
+        <div class="items3">three</div>
+        <div class="items4">four</div>
+    </main>
+</body>
+</html>

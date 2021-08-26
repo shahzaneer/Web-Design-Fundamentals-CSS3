@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS counter </title>
+    <style>
+    body{
+        counter-reset: mycounter 0;
+        /* ciunter reset me aik name dete hain aur kahan se start krna hai wo dena hai  */
+    }
+    h2::before{
+        content:"Chapter " counter(mycounter, upper-roman)  " : ";
+        /* counter me hi hum change krskte hain k humne konsa counter chaalana hai */
+        /* content me jo print krna hai wo likhna hoga */
+
+        counter-increment:mycounter 1;
+        
+        /* yeh increment dega */
+    }
+    </style>
+</head>
+<body>
+  <h1>Lorem ipsum dolor sit amet.</h1>
+  
+  <h2>Lorem ipsum dolor sit amet.</h2>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, soluta.</p>
+
+  <h2>Lorem ipsum dolor sit amet.</h2>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, incidunt!</p>
+
+  <h2>Lorem ipsum dolor sit.</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ullam?</p>
+
+</body>
+</html>

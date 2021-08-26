@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        #box{
+            width: 500px;
+            border: 50px solid black;
+            /* padding dene se width barh rhi hai jbke hmne tou 500px per fix ki thi  
+            border dene se bhi barh rhi hai width isko rectify krne k liay box sizing use krte hain */
+            padding: 150px;
+            box-sizing: border-box; 
+            /* content box by default hota hai usse width barhti hai faida nhi hai uska koi  */
+            /* ab box sizing ko use krne se  width same rahegi */
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>CUI Islamabad</h1>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolorem iure laborum corporis? Eligendi necessitatibus id assumenda. Incidunt a dicta accusamus voluptate. Adipisci.</p>
+
+    </div>
+    
+</body>
+</html>

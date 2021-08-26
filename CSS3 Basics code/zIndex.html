@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z index</title>
+    <!-- z index position aur top left etc k saath hi use hoita hai aur yeh z axis me move krwata hai div ko   -->
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 2px solid black;
+            font-size: 25px;
+        }
+        #first{
+            background-color: crimson;
+            top: 200px;
+            left: 150px;
+            z-index: -1;
+           
+        }
+        #second{
+            background-color: yellow;
+            top: 150px;
+            left: 100px;
+            /* z-index: 1; */
+            /* 1 krne se uper aajayega */
+            
+        }
+        #third{
+            background-color: greenyellow;
+            top: 100px;
+            left:50px;
+            
+        }
+        #fourth{
+            background: chocolate;
+            top: 50px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="first">A</div>
+    <div id="second">B</div>
+    <div id="third">C</div>
+    <div id="fourth">D</div>
+    
+</body>
+</html>

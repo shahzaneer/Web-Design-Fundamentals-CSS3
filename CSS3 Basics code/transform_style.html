@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform style</title>
+    <style>
+        div{
+            font-size: 20px;
+            text-align: center;
+            box-sizing: border-box;
+
+        }
+        .parent{
+            width: 400px;
+            height: 250px;
+            margin: 0 0 70px 100px;
+            background: grey;
+            perspective: 800px;
+            transform: rotateY(30deg);
+            transform-style: preserve-3d;
+            
+            /* by default houta hai flat usse hamain 2d look milta hai hamaray design ka aur preserve 3d krne se hamain style 3D me milta hai  */
+
+        }
+        #box{
+            width: 400px;
+            height: 250px;
+            background: pink;
+            padding-top: 20px;
+            transform: rotateX(60deg);
+            transform-origin: bottom;
+            /* origin bottom krdia tou peechay chala gya  */
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform style</h1>
+
+    <div class="parent">
+        <div id="box">Shahzaneer Ahmed</div>
+    </div>
+
+</body>
+</html>

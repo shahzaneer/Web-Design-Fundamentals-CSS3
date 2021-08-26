@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus within</title>
+    <style>
+        .container{
+
+            border: 2px solid transparent;
+            width: 60%;
+            height: 60%;
+            display: flex;
+            background: lightblue;
+        }
+
+        form{
+            background-color: white;
+        }
+
+        form:focus-within{
+            background-color: brown;
+        }
+        .container:focus-within{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Focus within</h1>
+    <!-- jb hum koi form tag banatay hain aur aur kisi element ko focus krte hain tou ager hum us parent div ki styling krna chahaiyn focus k case me tou hum yeh pseudo class use krste hain  -->
+    <!-- parent per lagegi yeh class .. -->
+    <div class="container">
+
+        <form action="">
+            <label for="">Name</label>
+            <input type="text"><br>
+            <label for="">Email</label>
+            <input type="email"><br>
+            <label for="">Phone</label>
+            <input type="phone">
+        </form>
+
+    </div>
+</body>
+</html>

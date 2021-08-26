@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- flex shrink ka mtlb hai k kisi bhi item ko responsive krna   1 default value hai mtlb shriink houta hai 1 per 0 per nhi hoga shrink  -->
+    <title>Flexbox Shrink</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            margin: 50px auto;
+
+            /* width: 400px; */
+
+            display: flex;
+            /* flex-wrap: wrap; */
+
+
+            
+            
+        }
+
+        .items{
+            /* flex-grow: 1; */
+            width: 200px;
+            height: 60px;
+            padding: 0;
+            margin: 0;
+            
+        }
+        .item1{
+            background-color: aqua;
+            /* flex-shrink: 0; */
+            /* sb shrink hongay lekin 1 nhi hoga window ko chota krne per */
+
+            flex: 0 0 200px;
+            /* flex : grow shrink  basis (shortcut hai yeh ) */
+            
+        }
+        .item2{background-color: brown;
+            flex-shrink: 4;
+            /* yeh kaafi zyada srhink hogaaa as  4 dia hai hmne  */
+        }
+
+        .item3{
+            background-color: tomato;
+        }
+        .item4{
+            background-color:teal;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox Shrink</h1>
+    
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+
+    </div>
+
+</body>
+</html>

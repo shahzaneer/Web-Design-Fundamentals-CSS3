@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors</title>
+    <style>
+        img[title]{
+            border: 3px solid red;
+            /* yeh attrbute selector hain is trh hum tag me ager koi attribute use hua hai aur hum srff usko hi target krna chahtay hain jisme attribute use hua hai tou uski styling yun hogi  */
+
+        }
+        input[type]{
+            /* input tag me jahan jahan type naami attribute diya gya hai wahan yeh styling kro */
+            border: 5px solid navy;
+        }
+        a[target]{
+            color: red;
+            /* un anchors ki css jinme target naami attribute dya gya ho  */
+        }
+        input[type='text']{
+           border: 5px solid green; 
+           /* jin inputs me type naami property use hui hai aur uski value bhi text k equal hai unki styling */
+
+        }
+        img[alt^="pak1"]{
+            /* img --> alt --> value --> pak1 se start hone walay tamaam tags per apply hogi styling */
+            border: 5px solid yellowgreen;
+        }
+
+        img[alt$="d"]{
+            /* img --> alt --> value --> d per khatam  hone walay tamaam tags per apply hogi styling */
+            border: 5px solid lightsalmon;
+        }
+        /* issi trh * use krte hain hum uska mtlb hai k given value kahein bhi ayee tou css implement hojaye  */
+
+        /* ~ ka mtlb hai k jo cheez value me hum dengay uske aagay peechay jiske space hogi tou select hoga werna nhi  */
+        
+
+      
+
+    </style>
+</head>
+<body>
+    <h1>Attribute selectors</h1>
+    <img src="pak1.jpg" alt="pak1">
+    <p>
+        lorem <a href="" target="">BBC</a> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor asperiores, rerum, deserunt magni veritatis, ipsum quisquam illo aspernatur eligendi non ut sit. <a href="">heyy</a> lorem 444 555 666 <a href="" target="">Hello world</a>
+
+    </p>
+    <img src="pak3.png" title="" alt="pak1 land">
+
+    <form action=""></form>
+    
+    <label for="">Name</label> <input type="text"><br>
+    <label for="">Gender</label> <input type="radio"><label for="">Male </label> <input type="radio"><label for="">Female </label> <br>
+    <label for="">Address</label> <input type="text"><br>
+    <label for="">Password</label> <input type="text"><br>
+
+
+</body>
+</html>

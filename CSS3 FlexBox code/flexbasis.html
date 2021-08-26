@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox basis</title>
+
+    <!-- yeh property max-width ki trh kaam krti hai  -->
+    <style>
+        .container{
+            border: 2px solid black;
+            margin: 50px auto;
+
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .items{
+            flex-grow: 1;
+            flex-basis: 100px;
+            /* max width 100px ho aur kam jitni marzi ho  */
+        }
+        .item1{
+            background-color: aqua;
+            flex-basis: 200px;
+            /*  */
+        }
+        .item2{background-color: brown;
+        }
+
+        .item3{
+            background-color: tomato;
+        }
+        .item4{
+            background-color:teal;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox basis</h1>
+    
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+
+    </div>
+
+</body>
+</html>

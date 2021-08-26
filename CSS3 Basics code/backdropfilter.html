@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backdropfilter</title>
+    <!-- kisi imag k uper ap koi div banayae aur uske neechay aanay wali pic ko app filters lagana chahyn tou backdrop filter kaam kregi yeh ! -->
+    <style>
+        #container{
+            width: 600px;
+            height:600px;
+
+            border: 5px solid black;
+            background: url(gcu1536x800.jpg) no-repeat;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+    
+
+        #inner{
+
+            width: 400px;
+            height: 250px;
+
+            
+            border-radius: 5px;
+            border: 2px solid #fff;
+
+
+            /* backdrop-filter: blur(2px); */
+            /* inner wala hissa blur hojayega  value jitn zyada dengay utna blur hoga */
+
+            /* backdrop-filter: brightness(180%); */
+
+             /* backdrop-filter: contrast(150%);  */
+            /* color ko bright krta hai  */ 
+
+            /* backdrop-filter: hue-rotate(90deg); */
+            /* 0 se 360 deg tk jaaskta  hai  */
+
+            /* backdrop-filter: invert(90%); */
+            /* purane camera wala look  x rays jesa */
+
+            /* backdrop-filter: sepia(100%); */
+
+            /* backdrop-filter: saturate(10%); 50 se neechay de saturate hogi */
+
+            /* multiple effect bhi lg skte hain */
+            backdrop-filter:blur(4px) sepia(80%) ;
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Backdropfilter</h1>
+
+    <div id="container">
+        <div id="inner">
+            Shahzaneer Ahmed 
+        </div>
+    </div>
+
+
+</body>
+</html>

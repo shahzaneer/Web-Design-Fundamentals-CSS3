@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selectors</title>
+    <!-- adjacent sibling selector k liay + ka sign use houta hai iska mtlb hai k jo tag given tag k baad hoga usper styling ki jaye -->
+    <style>
+       h1 + span{
+           color: red;
+           /* h1 k forun baad jo span aaya hai uski hi styling ki gyi hai */
+       } 
+
+       ul + p{
+           color: royalblue;
+       }
+    </style>
+</head>
+<body>
+    <h1>Adjacent Sibling Selectors</h1>
+    <h1>Shahzaneer ahmed</h1>
+    <span>Sp21-bcs-087</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, voluptatum.</p>
+
+    <ul>
+        <li>Orange</li>
+        <li>Apple</li>
+    </ul>
+    <p>Lorem ipsum broo</p>
+</body>
+</html>

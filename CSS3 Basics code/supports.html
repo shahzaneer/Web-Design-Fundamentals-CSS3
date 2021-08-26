@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@supports</title>
+    <!-- support men hum wo styling likhte hain jo () me diay gye cheez ager supported ho browser me  aur aik normal styling bhi rkhte hain ager support hogi tou aik styling wrrna main wali tou hai hi -->
+
+    <style>
+        @supports (display: flex){
+            /* ager display flex naami property hold hogi browser me  tou yeh wali styling chalegi   */
+            body{
+                background-color: orange;
+                /* orange hogya as flex chalti hai chrome me  */
+            }
+        }
+
+
+        @supports not (text-underline-offset: 2px){
+            body{
+                background-color: red;
+            }
+        }
+
+        /* yeh multiple k liay bhi use hoskte hain */
+        /* or and operator use krstke hain  */
+
+    </style>
+
+</head>
+<body>
+    <h1>@supports</h1>
+
+</body>
+</html>

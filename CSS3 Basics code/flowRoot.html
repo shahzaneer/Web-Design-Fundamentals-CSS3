@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow root</title>
+    <style>
+        /* jub hum aik parent div me child div daalte hain aur child ko float left krte hain tou parent div collapse krjaati hai iska koi appropriate solution nhi tha hamaray pas lekin ab yeh solution aagya hai aur flow root ki property isi zaman me use ki jaati hai  */
+        #parent{
+            width: 600px;
+            margin: 50px 20px;
+            border: 2px solid black;
+            /* display ki aik value hai yeh aik  */
+            display: flow-root;
+        }
+        /* har browser isko support nhi krta caniuse.com per jaaker hum issko dekh skte hain  */
+        .child{
+            width: 100px;
+            height: 100px;
+            background: red;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flow root</h1>
+    <div id="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

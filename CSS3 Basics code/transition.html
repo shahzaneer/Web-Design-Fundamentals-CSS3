@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #s{
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            margin-bottom: 20px;
+            transition-property:all;
+            transition-duration:2s; 
+            /* transition-timing-function: linear; */
+            /* transition-timing-function:ease-in; */
+            /* ttf jo hai wo aik style hai timing ka aur duration us style k implement hone ka waqt hai  */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function:steps(4); */
+            /* transition-timing-function: step-start; 
+            */
+            /* yeh 4 steps me animation hogi  */
+            
+            /* transition-timing-function:cubic-bezier(0.1,0.7,1.0,0.1); */
+            /* isme steps hain lekin smoothness k saath  */
+            transition-timing-function: linear;
+            transition-delay: 2s;
+            /* isse 2sec delay hogya hai yeh  */
+
+            /* sbka shorthand
+            all(tp) 2s(td) linear(ttf) 1s(tdelay)  */
+
+            /* hover  k elawa dusri pseudo classes per bhi lgskta hai yeh  */
+
+
+
+
+
+
+
+            /* without transition property jhathka maarta hai yeh effect
+            /* shorcut hai yeh 
+             */
+            /* transition: width,height,backgroundColor 2s,4s,2s; */
+            
+        }
+        #s:active{
+            /* active ka mtlb hai jb click kia gya hoga */
+            width: 500px;
+            height: 400px;
+            background-color: orange;
+
+        }
+
+        #k{
+            width: 400px;
+            height: 200px;
+            background-color: blue;
+            margin-bottom: 20px;
+        }
+
+        #f{
+            height: auto;
+            width: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- transition hai smoothness -->
+    <h1>Transition</h1>
+
+    <div id="s"></div>
+    <div id="k"></div>
+    <div id="f"> <img src="gcu1536x800.jpg" alt=""></div>
+</body>
+</html>

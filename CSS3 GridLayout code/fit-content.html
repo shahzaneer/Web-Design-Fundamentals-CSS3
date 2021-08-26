@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fit-content</title>
+    <style>
+        body{
+            font-family: cursive;
+            padding: 0; margin: 0;
+        }
+        main{
+            width: 600px;
+            margin: 50px auto;
+            background-color: grey;
+
+            display: grid;
+           
+            grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+            /* fit content --> max-width ki trh kaam krta hai bs yahan width content k hisaab se aati hai ayur jese hi width 200px (yani isme di hui value jitni hojaye widht barhna ruk jaat hai ) */
+             grid-template-rows: repeat(3,100px);
+        }
+        .items1{
+            background-color: aquamarine;
+            overflow: hidden;
+        }
+        .items2{
+            background-color: blue;
+        }
+        .items3{
+            background-color: chartreuse;
+        }
+        .items4{
+            background-color: tomato;
+        }
+        .items5{
+            background-color: brown;
+        }
+        .items6{
+            background-color:teal ;
+        }
+    </style>
+</head>
+<body>
+    <h1>fit-content</h1>
+
+    <main>
+        <div class="items1">one Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga doloribus unde vitae voluptas expedita ex id ratione nostrum quasi. Dolores sequi error porro voluptas, illum nobis veniam, pariatur placeat quasi aspernatur aliquam laboriosam aut eaque at animi quos rem eveniet enim? Aliquid, provident neque consequatur accusantium repudiandae voluptate unde pariatur explicabo minima itaque quibusdam illum laboriosam saepe rem, sequi quis esse sunt possimus nisi amet recusandae! Quae laudantium delectus minus consequatur nemo voluptate! Minima soluta minus molestias. Tempore possimus, nihil laboriosam placeat deserunt labore asperiores commodi sed quisquam officia quas eos. Pariatur modi adipisci et. Repudiandae dignissimos tenetur numquam?</div>
+        <div class="items2">two</div>
+        <div class="items3">three</div>
+        <div class="items4">four</div>
+        <div class="items5">Five</div>
+        <div class="items6">Six</div>
+    </main>
+</body>
+</html>

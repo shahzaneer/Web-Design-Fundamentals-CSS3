@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid track alignment</title>
+
+     <style>
+        main{
+            padding: 0; margin: 0;
+            text-align: center;
+            color: white;
+            display: grid;
+            width: 700px;
+            /* align content property ko dekhne k liay height deni zaruri hai */
+            height: 700px;
+            grid-template-columns: 150px 150px ;
+            
+            grid-template-rows: repeat(2,100px );
+
+           background-color: gainsboro;
+            grid-gap: 15px;
+
+            grid-auto-rows: 70px;
+
+            /* justify items aur align items --> tamaam items ko alag alg align krti thin jbke justify content aur align content puray track ki alignment krti hain  */
+
+            /* justify content --> horizontal alignmnet krega puray track ki  */
+
+            /* justify-content: start; by default hota hai yeh  */
+            /* justify-content: center; puray track ko centre me krdeta hai */
+            /* justify-content: end; end me krdeta hai yeh  */
+            /* justify-content:space-between ; isse jitna bhi space hamaray pas  mojud hota hai usse centre me daal deta hai  */
+
+            /* justify-content: space-around; left right me braber space ayega baki bahc jaanay wala space ayega centre me   */
+
+            /* justify-content: space-evenly; ise har side se same space aajata hai  */
+
+
+            /* align content --> yeh krta hai vertical alignment track ki  */
+
+            /* align-content: center; vertically cetnre  */
+            /* align-content: end;  */
+            /* align-content:space-between ; vertically space beech me aajayega jitna possible ho  */
+            /* align-content: space-around; */
+
+
+            /* grid-auto-flow:  row dense; beech me spacing ho tou isko sahi krdega yani insert krdega koi grid item */
+            align-content: space-evenly;
+            
+        }
+        .items1{background-color: orange;}
+        .items2{background-color: blue;}
+        .items3{background-color: aqua;
+        grid-row: span 3;
+        }
+        .items4{background-color: rgb(14, 212, 47);}
+        .items5{background-color: chartreuse;}
+        .items6{background-color: darkcyan;}
+        .items7{background-color: crimson;
+        grid-column: span 2;
+        }
+        .items8{background-color: violet;}
+    </style>
+    
+</head>
+<body>
+    <h1>grid track alignment</h1>
+    <main>
+        <div class="items items1">one </div>
+        <div class="items items2">two</div>
+        <div class="items items3">three </div>
+        <div class="items items4">four</div>
+        <div class="items items5">five</div>
+        <div class="items items6">six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+    </main>
+
+</body>
+</html>

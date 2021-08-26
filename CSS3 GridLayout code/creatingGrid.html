@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout </title>
+    <style>
+        .container{
+            background: grey;
+            width: 700px;
+            margin:70px 0 0 50px;
+            display: grid;
+            /* coloumn aur rows diay bagair yeh na chalaygi */
+
+            /* grid-template-columns:250px 200px auto ; */
+            /* auto dene se jitni bhi width hogi occupy krlega d */
+            /* width hai yeh columns ki itni width k do column bn gye hain  */
+
+            /* grid-template-rows:150px 200px 100px; */
+
+            /* percentage me bhi di jaaskti hai  */
+
+            /* grid-template-columns: 55% 100px auto;
+            grid-template-rows: 150px 150px 150px; */
+
+            /* grid me aik new unit bhi aaya hai fr k name se colums aur rows k liay jiska mtlb hai fraction  jitni fractions dengay total grid ki width k hisab se fraction bn jaygi*/
+
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: 150px 150px 150px; */
+
+            /* hamaray pass aik repeat function bhi hai jisko use kr k hum baar baar width dene ki bijyae aik hi baar deskte hain  */
+            grid-template-rows: repeat(3,150px) 1fr;
+
+            /* row me fr container ki height k hisaab se hoga aur column me container ki height se */
+
+
+            grid-gap: 30px;
+
+
+        }
+        .item1{
+            /* clas ka subname bhi use hoksta hai is trhh */
+            background-color: orange;
+        }
+        .item2{
+            background-color: yellowgreen;
+        }
+        .item3{
+            background-color: slateblue;
+        }
+        .item4{
+            background-color: hotpink;
+        }
+        .item5{
+            background-color: royalblue;
+        }
+        .item6{
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid layout</h1>
+
+    <div class="container">
+        <!-- div.items.item$*6 is trh shorcut hai divs ko ikhatta create krnay ka  -->
+
+        <div class="items item1">First</div>
+        <div class="items item2">Second</div>
+        <div class="items item3">third</div>
+        <div class="items item4">fourth</div>
+        <div class="items item5">fifth</div>
+        <div class="items item6">Sixth</div>
+
+    </div>
+</body>
+</html>

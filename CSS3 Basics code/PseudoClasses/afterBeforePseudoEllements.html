@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>afterBeforePseudoEllements</title>
+    <style>
+        #x{
+            padding:300px 5px;
+        }
+        /* after before walay pseudo elements wo content tag k bagair use nhi hoskte hain */
+        /* before and after first se pehle aaur last k forun baad mojud houtay hain  */
+
+        p::before{
+            content: "Hello ";
+            /* yeh content add hogya before position per aur saari styling isper hi hogi  */
+            background-color: red;
+            color: black;
+            /* yeh code me nhi dikhta -- */
+            /* isko div ki trh bhi hsow krwaskte hain  */
+            display: block;
+        }
+
+        p:hover:after{
+            content: "world ";
+            /* yeh content add hogya before position per aur saari styling isper hi hogi  */
+            background-color: green;
+            color: black;
+            display: block;
+            /* yeh image tag k saath use nhi hoga */
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>afterBeforePseudoEllements.</h1>
+
+    <p id="x">Learning web designing</p>
+
+</body>
+</html>

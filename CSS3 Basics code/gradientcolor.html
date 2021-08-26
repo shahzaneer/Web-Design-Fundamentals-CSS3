@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient </title>
+    <style>
+        #sc{
+            width: 800px;
+            height: 300px;
+            padding: 30px;
+            border: 2px solid black;
+        
+            /* background: linear-gradient(to bottom right ,red,yellow); */
+            /* direct me jo dengay to k saath uski trff light second me dia gya color hoga , isme hum diagonal me bhi deskte hain aur degree  me bhi 45deg*/
+
+            /* background: repeating-linear-gradien(to right,red,yellow 10%,green 20%); */
+            /* mere browser me nhi chal rha yyeh isme repeat hoga gradient  */
+
+
+
+        }
+
+        #b{
+            width: 800px;
+            height: 300px;
+            padding: 30px;
+            border: 2px solid black;
+            background: radial-gradient(closest-side at 50% 50%,red,yellow,green);
+
+            /* background:radial-gradient(red 20%,yellow 80%) ; */
+            /* yeh circle/ellipse  ki soorat me mixing krta hai yahan percentage bhi deskte hain color k saath  */
+        
+
+
+        }
+
+        #x{
+            width: 800px;
+            height: 300px;
+            padding: 30px;
+            border: 2px solid black;
+            background: repeating-radial-gradient(red,yellow 5%,green 15%);
+            /* repeated me ellipse ya circle jo hai repeat horha hoga */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>I2c</h1>
+    <div id="sc">  
+        <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores expedita velit ducimus. Voluptatibus, error impedit vitae commodi officiis enim eius neque sint iusto dicta in aperiam molestias sapiente quibusdam necessitatibus veritatis iure voluptas consectetur consequuntur suscipit? At aspernatur inventore iusto quisquam modi excepturi tempora ab?
+        </p>
+</div>
+<div id="b">
+    <h1>Nescom</h1>
+
+</div>
+
+<div id="x">
+    <h1>RaviCom</h1>
+</div>
+
+    
+</body>
+</html>
